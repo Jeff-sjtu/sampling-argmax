@@ -1,2 +1,5 @@
-# sampling-argmax
-Code for "Localization with Sampling-Argmax", NeurIPS 2021
+# Localization with Sampling-Argmax
+
+> [Localization with Sampling-Argmax]()  
+> Jiefeng Li, Tong Chen, Ruiqi Shi, Yujing Lou, Yong-Lu Li, Cewu Lu  
+> NeurIPS 2021  
