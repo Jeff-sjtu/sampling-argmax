@@ -1,5 +1,8 @@
 # Localization with Sampling-Argmax
 
+[[`arXiv`]()]
+[[`Project Page`](https://jeffli.site/sampling-argmax/)]
+
 > [Localization with Sampling-Argmax]()  
 > Jiefeng Li, Tong Chen, Ruiqi Shi, Yujing Lou, Yong-Lu Li, Cewu Lu  
 > NeurIPS 2021  
