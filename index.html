@@ -143,8 +143,16 @@
 
 		<table align=center width=600px>
 			<br>
+			<p class="authors">
+				<a href="https://jeffli.site">Jiefeng Li</a>,
+				<a href="">Tong Chen</a>,
+				<a href="">Ruiqi Shi</a>,
+				<a href="https://yokinglou.github.io/">Yujing Lou</a>,
+				<a href="https://dirtyharrylyl.github.io/">Yong-Lu Li</a>,
+				<a href='http://mvig.org/'>Cewu Lu</a>
+			</p>
 
-			<table align=center width=600px>
+			<!-- <table align=center width=600px>
 				<tr>
 					<td align=center width=100px>
 						<center>
@@ -181,7 +189,7 @@
 						</center>
 					</td>
 				</tr>
-			</table>
+			</table> -->
 
 			<br>
 
@@ -189,7 +197,7 @@
 				<tr>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:24px">Shanghai Jiao Tong University</span>
+							<span style="font-size:20px">Shanghai Jiao Tong University</span>
 						</center>
 					</td>
 				</tr>
@@ -201,33 +209,33 @@
 				<tr>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:24px">In <a href='https://nips.cc/'>NeurIPS 2021</a></span>
+							<span style="font-size:20px">In <a href='https://nips.cc/'>NeurIPS 2021</a></span>
 						</center>
 					</td>
 				</tr>
 			</table>
 		<br>
 
-			<table align=center width=600px>
+			<table align=center width=380px>
 				<tr>
-					<td align=center width=120px>
+					<td align=center width=60px>
 						<center>
-							<span style="font-size:24px"><a>[Paper]</a></span>
+							<span style="font-size:20px"><a>[Paper]</a></span>
 						</center>
 					</td>
-					<td align=center width=120px>
+					<td align=center width=60px>
 						<center>
-							<span style="font-size:24px"><a>[Supplementary]</a></span>
+							<span style="font-size:20px"><a>[Supplementary]</a></span>
 						</center>
 					</td>
-					<td align=center width=120px>
+					<td align=center width=60px>
 						<center>
-							<span style="font-size:24px"><a>[arXiv]</a></span>
+							<span style="font-size:20px"><a>[arXiv]</a></span>
 						</center>
 					</td>
-					<td align=center width=120px>
+					<td align=center width=60px>
 						<center>
-							<span style="font-size:24px"><a href='https://github.com/Jeff-sjtu/sampling-argmax'>[Code]</a></span><br>
+							<span style="font-size:20px"><a href='https://github.com/Jeff-sjtu/sampling-argmax'>[Code]</a></span><br>
 						</center>
 					</td>
 				</tr>
@@ -241,7 +249,7 @@
 			<tr>
 				<td width=260px>
 					<center>
-						<img class="round" style="width:500px" src="./resources/sampling-argmax.png"/>
+						<img class="round" style="width:300px" src="./resources/sampling-argmax.png"/>
 					</center>
 				</td>
 			</tr>
@@ -255,15 +263,7 @@
 		<center><h1>Abstract</h1></center>
 		<tr>
 			<td>
-				Soft-argmax operation is commonly adopted in the detection-based method to localize the target position in a
-				differentiable manner. However, training the neural network with soft-argmax makes the shape of the probability map
-				unconstrained. Consequently, the model lacks pixel-wise supervision through the map during training, leading to
-				performance degradation. In this work, we propose sampling-argmax, a differentiable training method that imposes
-				implicit constraints to the shape of the probability map by minimizing the expectation of the error. To approximate the
-				expectation, we introduce a continuous formulation of the output distribution and develop a differentiable sampling
-				process. The expectation can be approximated by calculating the average error of all samples drawn from the output
-				distribution. We show that sampling-argmax can seamlessly replace the conventional soft-argmax operation on various
-				localization tasks. Comprehensive experiments demonstrate the effectiveness and flexibility of the proposed method.
+				Soft-argmax operation is commonly adopted in the detection-based method to localize the target position in a differentiable manner. However, training the neural network with soft-argmax makes the shape of the probability map unconstrained. Consequently, the model lacks pixel-wise supervision through the map during training, leading to performance degradation. In this work, we propose sampling-argmax, a differentiable training method that imposes implicit constraints to the shape of the probability map by minimizing the expectation of the error. To approximate the expectation, we introduce a continuous formulation of the output distribution and develop a differentiable sampling process. The expectation can be approximated by calculating the average error of all samples drawn from the output distribution. We show that sampling-argmax can seamlessly replace the conventional soft-argmax operation on various localization tasks. Comprehensive experiments demonstrate the effectiveness and flexibility of the proposed method.
 			</td>
 		</tr>
 	</table>
