@@ -1,6 +1,7 @@
 # Localization with Sampling-Argmax
 
-[[`arXiv`]()]
+[[`Paper`](https://jeffli.site/sampling-argmax/resources/neurips2021-sampling-argmax.pdf)]
+<!-- [[`arXiv`]()] -->
 [[`Project Page`](https://jeffli.site/sampling-argmax/)]
 
 > [Localization with Sampling-Argmax]()  
