@@ -17,7 +17,7 @@
 
 If you find our code or paper useful, please consider citing
 ```bibtex
-@inproceedings{li2021sampling,
+@inproceedings{li2021localization,
     title={Localization with Sampling-Argmax},
     author={Li, Jiefeng and Chen, Tong and Shi, Ruiqi and Lou, Yujing and Li, Yong-Lu and Lu, Cewu},
     booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
