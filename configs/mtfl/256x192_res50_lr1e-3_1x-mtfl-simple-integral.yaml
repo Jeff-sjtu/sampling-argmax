@@ -1,0 +1,64 @@
+DATASET:
+  TRAIN:
+    TYPE: 'MTFL'
+    ROOT: './data/mtfl/'
+    ANN: 'training.json'
+    AUG:
+      FLIP: true
+      ROT_FACTOR: 40
+      SCALE_FACTOR: 0.3
+      NUM_JOINTS_HALF_BODY: 8
+      PROB_HALF_BODY: -1
+  VAL:
+    TYPE: 'MTFL'
+    ROOT: './data/mtfl/'
+    ANN: 'testing.json'
+  TEST:
+    TYPE: 'MTFL'
+    ROOT: './data/mtfl/'
+    ANN: 'testing.json'
+DATA_PRESET:
+  TYPE: 'simple'
+  SIGMA: 2
+  NUM_JOINTS: 5
+  NORM_TYPE: 'sampling'
+  BASIS: 'tri'
+  NUM_SAMPLE: 30
+  ANNEAL: True
+  IMAGE_SIZE:
+  - 256
+  - 256
+  HEATMAP_SIZE:
+  - 64
+  - 64
+MODEL:
+  TYPE: 'SimpleLandmark'
+  PRETRAINED: ''
+  TRY_LOAD: ''
+  NUM_DECONV_FILTERS:
+  - 256
+  - 256
+  - 256
+  NUM_LAYERS: 18
+LOSS:
+  TYPE: 'L1JointRegression'
+TEST:
+  HEATMAP2COORD: 'coord'
+TRAIN:
+  WORLD_SIZE: 4
+  BATCH_SIZE: 32
+  BEGIN_EPOCH: 0
+  END_EPOCH: 30
+  OPTIMIZER: 'adam'
+  LR: 0.001
+  LR_FACTOR: 0.1
+  # LR_STEP:
+  # - 25
+  # - 40
+  LR_STEP:
+  - 10
+  - 20
+  DPG_MILESTONE: 140
+  DPG_STEP:
+  - 160
+  - 190

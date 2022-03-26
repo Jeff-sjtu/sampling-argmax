@@ -127,3 +127,15 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+.vscode
+.tensorboard
+exp/coco*
+*.pth
+*.weights
+data/
+tmp/
+exp/
+exp/json
+tmp_*/
+example/res/
